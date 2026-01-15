@@ -17,7 +17,7 @@ I run a weekly collaborative session called **Coding & Coffee**. I noticed a pat
 The most popular tool in the garage is the `useFetch` hook.
 
 **The Old Way (Boilerplate Way) **
-```javascript
+```
 useEffect(() => {
   setLoading(true);
   fetch(url)
@@ -28,15 +28,13 @@ useEffect(() => {
 }, []);
 
 ```
-## **Garage Build**
+## **New Build**
+```
+
+const { data, loading, error } = useFetch('[https://api.mysite.com/data](https://api.mysite.com/data)');
+
 ```
 
 
-const { data, loading, error } = useFetch('[https://api.mysite.com/data](https://api.mysite.com/data)');```
-## Badges
 
-Add badges from somewhere like: [shields.io](https://shields.io/)
 
-![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
